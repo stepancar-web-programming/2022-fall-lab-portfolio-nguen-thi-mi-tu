@@ -74,27 +74,6 @@
 }
 
 
-
-
-
-
-/*-----------------------------------*\
-  #CLIENT
-\*-----------------------------------*/
-
-.client {
-  background-color: var(--jet);
-  padding-block: 30px;
-}
-
-.client .slider-item { min-width: calc(50% - 15px); }
-
-.client .slider::-webkit-scrollbar { display: none; }
-
-
-
-
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -189,56 +168,6 @@
 
 
 
-/*-----------------------------------*\
-  #TESTIMONIALS
-\*-----------------------------------*/
-
-.testi .slider-item {
-  min-width: 100%;
-  scroll-margin-inline-start: 16px;
-}
-
-.testi .card {
-  position: relative;
-  z-index: 1;
-}
-
-.testi .card::after {
-  content: url("../images/quote-left.svg");
-  position: absolute;
-  bottom: 15px;
-  right: 25px;
-}
-
-.testi .client-name {
-  margin-block-start: 15px;
-  color: var(--jet);
-  font-weight: var(--fw-600);
-}
-
-.testi .client-title { font-size: var(--fs-14); }
-
-.testi .slider {
-  margin-inline: -16px;
-  padding-inline: 16px;
-  padding-block-end: 35px;
-}
-
-.testi .slider::-webkit-scrollbar { height: 12px; }
-
-.testi .slider::-webkit-scrollbar-track {
-  border: 1px solid var(--jet);
-  border-radius: var(--radius-pill);
-}
-
-.testi .slider::-webkit-scrollbar-thumb {
-  background-color: var(--jet);
-  border-radius: var(--radius-pill);
-}
-
-.testi .slider::-webkit-scrollbar-button { width: calc(25% - 20px); }
-
-
 
 
 
@@ -253,12 +182,9 @@
 @media (min-width: 575px) {
 
   /**
-   * CLIENT, ABOUT & SKILL
+   * ABOUT & SKILL
    */
 
-  .client .slider-item { min-width: calc(33.33% - 20px); }
-
-  .client .slider-item .w-100,
   .about-banner,
   .skill-banner {
     max-width: max-content;
@@ -300,21 +226,8 @@
 
 
 
-  /**
-   * CLIENT
-   */
-
-  .client .slider-item { min-width: calc(25% - 22.5px); }
 
 
-
-  /**
-   * TESTIMONIALS
-   */
-
-  .testi .slider-item { min-width: calc(50% - 15px); }
-
-}
 
 
 
@@ -344,15 +257,6 @@
   .hero { text-align: left; }
 
   .hero .btn { margin-inline: 0; }
-
-
-
-  /**
-   * CLIENT
-   */
-
-  .client .slider-item { min-width: calc(20% - 24px); }
-
 
 
   /**
