@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Portfolio</title>
+  <meta name="title">
+  <meta name="description">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/require.css">
+  <link rel="stylesheet" href="./assets/css/pages/portfolio.css">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="151" height="28" alt="Annie home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="label-lg navbar-link has-after">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./service.html" class="label-lg navbar-link has-after">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="label-lg navbar-link has-after active">Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contact.html" class="label-lg navbar-link has-after">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="./contact.html" class="btn btn-primary">Contact Now</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" aria-labelledby="portfolio-label">
+        <div class="container">
+
+          <h2 class="section-title headline-md text-center" id="portfolio-label">Latest Projects</h2>
+
+          <ul class="portfolio-list">
+
+            <li>
+              <div class="portfolio-card">
+
+                <div class="card-banner img-holder" style="--width: 1000; --height: 600;">
+                  <img src="./assets/images/portfolio-1.png" width="1000" height="600" loading="lazy"class="img-cover">
+
+                  <a href="https://github.com/jasmine150720/Online-Book-Store" class="btn-icon" >
+                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="chip label-md">Java Fullstack</span>
+
+                  <h3 class="title-md">Jasmine Ebook Store</h3>
+
+                  <p class="card-text">
+                    I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                    websites, web services and online stores
+                  </p>
+
+                  <a href="https://github.com/jasmine150720/Online-Book-Store" target="_blank" class="btn btn-primary">View Project</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="portfolio-card">
+
+                <div class="card-banner img-holder" style="--width: 1000; --height: 600;">
+                  <img src="./assets/images/portfolio-2.png" width="1000" height="600" loading="lazy" class="img-cover">
+
+                  <a href="https://github.com/jasmine150720/Sorting_Algorithms_Visualized_Tool" target="_blank" class="btn-icon" >
+                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="chip label-md">Algorithm</span>
+
+                  <h3 class="title-md">Sorting Algorithms Visualized Tool</h3>
+
+                  <p class="card-text">
+                    Using the bubble sort algorithm to sort the pixels of an image.
+                  </p>
+
+                  <a href="https://github.com/jasmine150720/Sorting_Algorithms_Visualized_Tool" target="_blank" class="btn btn-primary">View Project</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="portfolio-card">
+
+                <div class="card-banner img-holder" style="--width: 1000; --height: 600;">
+                  <img src="./assets/images/portfolio-3.jpg" width="1000" height="600" loading="lazy" class="img-cover">
+
+                  <a href="https://github.com/jasmine150720/artificial_intelligence_system" target="_blank" class="btn-icon" aria-label>
+                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="chip label-md">AI</span>
+
+                  <h3 class="title-md">Artificial Intelligence System</h3>
+                  <p class="card-text">
+                    Labs for AI.
+                  </p>
+
+                  <a href="https://github.com/jasmine150720/artificial_intelligence_system" target="_blank" class="btn btn-primary">View Project</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.facebook.com/mytu741/" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/mytu741/" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="text-center">&copy; 2022 copyright all right reserved</p>
+
+    </div>
+  </footer>
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
