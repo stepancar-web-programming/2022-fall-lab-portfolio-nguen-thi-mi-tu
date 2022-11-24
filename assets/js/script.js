@@ -26,16 +26,23 @@ window.addEventListener("load", function () {
 });
 
 /**COUNT */
-const constEl = document.getElementById('count');
-updateVisitCount();
-
-function updateVisitCount(){
-  fetch('https://api.countapi.xyz/update/jasmine/mouse/?amount=1')
-  .then(res => res.json())
-  .then(res => {
-    constEl.innerHTML= res.value;
-  })
+const constEl = document.getElementById("count");
+async function updateVisitCount() {
+  try {
+    const response = await fetch("https://api.countapi.xyz/update/jasmine/mouse/?amount=1")
+    .then(res => res.json())
+    .then(res => {
+      constEl.innerHTML= res.value;
+    });
+    if (!response.ok) {
+      throw new Error("HTTP error: ${response.status}");
+    }
+  }
+  catch (error) {
+    console.error("${error}");
+  }
 }
+updateVisitCount();
 
 /**
  * MOBILE NAV TOGGLE
