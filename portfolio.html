@@ -9,9 +9,9 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Portfolio</title>
+  <title>Services</title>
   <meta name="title">
-  <meta name="description">
+  <meta name="description" content="This is a personal portfolio">
 
   <!-- 
     - favicon
@@ -29,7 +29,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/require.css">
-  <link rel="stylesheet" href="./assets/css/pages/portfolio.css">
+  <link rel="stylesheet" href="./assets/css/pages/service.css">
 
 </head>
 
@@ -66,11 +66,11 @@
           </li>
 
           <li class="navbar-item">
-            <a href="./service.html" class="label-lg navbar-link has-after">Services</a>
+            <a href="#" class="label-lg navbar-link has-after active">Services</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="label-lg navbar-link has-after active">Portfolio</a>
+            <a href="./portfolio.html" class="label-lg navbar-link has-after">Portfolio</a>
           </li>
 
           <li class="navbar-item">
@@ -97,95 +97,88 @@
     <article>
 
       <!-- 
-        - #PORTFOLIO
+        - #SERVICE
       -->
 
-      <section class="section portfolio" aria-labelledby="portfolio-label">
+      <section class="section service has-bg-image" aria-labelledby="service-label"
+        style="background-image: url('./assets/images/service-bg.png')">
         <div class="container">
 
-          <h2 class="section-title headline-md text-center" id="portfolio-label">Latest Projects</h2>
+          <h2 class="section-title headline-md text-center" id="service-label">My Services</h2>
 
-          <ul class="portfolio-list">
+          <ul class="service-list">
 
-            <li>
-              <div class="portfolio-card">
+            <li class="card-container">
+              <div class="card card-md" style="background-color: hsl(177, 39%, 72%)">
 
-                <div class="card-banner img-holder" style="--width: 1000; --height: 600;">
-                  <img src="./assets/images/portfolio-1.png" width="1000" height="600" loading="lazy"class="img-cover">
-
-                  <a href="https://github.com/jasmine150720/Online-Book-Store" class="btn-icon" >
-                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
-                  </a>
+                <div class="card-media">
+                  <ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon>
                 </div>
 
-                <div class="card-content">
+                <div>
+                  <h3 class="card-title title-sm">Web Design</h3>
 
-                  <span class="chip label-md">Java Fullstack</span>
-
-                  <h3 class="title-md">Jasmine Ebook Store</h3>
-
-                  <p class="card-text">
-                    I design and develop services for customers of all sizes, specializing in creating stylish, modern
-                    websites, web services and online stores
+                  <p class="body-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
                   </p>
-
-                  <a href="https://github.com/jasmine150720/Online-Book-Store" target="_blank" class="btn btn-primary">View Project</a>
-
                 </div>
 
               </div>
             </li>
 
-            <li>
-              <div class="portfolio-card">
+            <li class="card-container">
+              <div class="card card-md" style="background-color: hsl(41, 99%, 64%)">
 
-                <div class="card-banner img-holder" style="--width: 1000; --height: 600;">
-                  <img src="./assets/images/portfolio-2.png" width="1000" height="600" loading="lazy" class="img-cover">
-
-                  <a href="https://github.com/jasmine150720/Sorting_Algorithms_Visualized_Tool" target="_blank" class="btn-icon" >
-                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
-                  </a>
+                <div class="card-media">
+                  <ion-icon name="laptop-outline" aria-hidden="true"></ion-icon>
                 </div>
 
-                <div class="card-content">
+                <div>
+                  <h3 class="card-title title-sm">Development</h3>
 
-                  <span class="chip label-md">Algorithm</span>
-
-                  <h3 class="title-md">Sorting Algorithms Visualized Tool</h3>
-
-                  <p class="card-text">
-                    Using the bubble sort algorithm to sort the pixels of an image.
+                  <p class="body-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
                   </p>
-
-                  <a href="https://github.com/jasmine150720/Sorting_Algorithms_Visualized_Tool" target="_blank" class="btn btn-primary">View Project</a>
-
                 </div>
 
               </div>
             </li>
 
-            <li>
-              <div class="portfolio-card">
+            <li class="card-container">
+              <div class="card card-md" style="background-color: hsl(221, 100%, 79%)">
 
-                <div class="card-banner img-holder" style="--width: 1000; --height: 600;">
-                  <img src="./assets/images/portfolio-3.jpg" width="1000" height="600" loading="lazy" class="img-cover">
-
-                  <a href="https://github.com/jasmine150720/artificial_intelligence_system" target="_blank" class="btn-icon" aria-label>
-                    <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
-                  </a>
+                <div class="card-media">
+                  <ion-icon name="shapes-outline" aria-hidden="true"></ion-icon>
                 </div>
 
-                <div class="card-content">
+                <div>
+                  <h3 class="card-title title-sm">Web Design</h3>
 
-                  <span class="chip label-md">AI</span>
-
-                  <h3 class="title-md">Artificial Intelligence System</h3>
-                  <p class="card-text">
-                    Labs for AI.
+                  <p class="body-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
                   </p>
+                </div>
 
-                  <a href="https://github.com/jasmine150720/artificial_intelligence_system" target="_blank" class="btn btn-primary">View Project</a>
+              </div>
+            </li>
 
+            <li class="card-container">
+              <div class="card card-md" style="background-color: hsl(76, 39%, 72%)">
+
+                <div class="card-media">
+                  <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="card-title title-sm">Development</h3>
+
+                  <p class="body-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </p>
                 </div>
 
               </div>
@@ -201,33 +194,13 @@
 
 
 
+
+
   <!-- 
     - #FOOTER
   -->
+<my-footer></my-footer>
 
-  <footer class="footer">
-    <div class="container">
-
-      <ul class="social-list">
-
-        <li>
-          <a href="https://www.facebook.com/mytu741/" class="social-link">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.instagram.com/mytu741/" class="social-link">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-
-      <p class="text-center">&copy; 2022 copyright all right reserved</p>
-
-    </div>
-  </footer>
 
 
 
@@ -244,5 +217,4 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>
