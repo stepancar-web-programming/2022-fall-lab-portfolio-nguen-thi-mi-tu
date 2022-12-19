@@ -65,9 +65,40 @@ navToggler.addEventListener("click", toggleNavbar);
 
 const header = document.querySelector("[data-header]");
 
-const activeHeader = function () {
+function activeHeader(){
   window.scrollY > 50 ? header.classList.add("active")
     : header.classList.remove("active");
 }
 
 window.addEventListener("scroll", activeHeader);
+
+class MyFooter extends HTMLElement{
+  connectedCallback(){
+    this.innerHTML= 
+    <footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.facebook.com/mytu741/" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/mytu741/" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="text-center">&copy; <script>document.write(new Date().getFullYear()) copyright all right reserved</script></p>
+
+    </div>
+  </footer>
+
+  }
+}
+customElements.define('my-footer',MyFooter)
